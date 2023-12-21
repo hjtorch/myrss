@@ -8,7 +8,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/main">
-            <App />
+            <Background />
           </Route>
         </Routes>
       </BrowserRouter>
