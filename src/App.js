@@ -15,7 +15,7 @@ function App() {
   );
 }
 
-class App extends Component {
+class Background extends Component {
   render() {
     return (
       <div className="App">
