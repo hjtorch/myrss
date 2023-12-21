@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
       <BrowserRouter>
-        <Switch>
+        <Routes>
           <Route path="/main">
             <App />
           </Route>
-        </Switch>
+        </Routes>
       </BrowserRouter>
   );
 }
