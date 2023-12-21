@@ -14,7 +14,7 @@ function App() {
       </BrowserRouter>
   );
 }
-
+/*you 
 class Background extends Component {
   render() {
     return (
@@ -36,6 +36,6 @@ class Background extends Component {
       </div>
     );
   }
-}
+}*/
 
 export default App;
