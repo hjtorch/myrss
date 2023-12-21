@@ -1,8 +1,21 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+function App() {
+  return (
+      <BrowserRouter>
+        <Switch>
+          <Route path="/main">
+            <App />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+  );
+}
+
+class Background extends Component {
   render() {
     return (
       <div className="App">
