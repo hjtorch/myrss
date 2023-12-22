@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Router() {
   return (
       <BrowserRouter>
         <Routes>
@@ -18,7 +18,7 @@ function HelloWorld() {
 }
 
 
-class Home extends Component {
+class App extends Component {
   render() {
     return (
       <div className="App">
@@ -37,7 +37,7 @@ class Home extends Component {
           </a>
         </header>
       </div>
-      <App/>
+      <Router/>
     );
   }
 }
