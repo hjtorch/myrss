@@ -7,9 +7,7 @@ function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/main">
-            <h1> hello world!<h1 />
-          </Route>
+          <Route path="/main" element={<h1> hello world!<h1 />}/>
         </Routes>
       </BrowserRouter>
   );
