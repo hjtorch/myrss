@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Routes, Link, Outlet} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import Signin from './main'
 
 function Router() {
   return (
@@ -24,6 +25,9 @@ const Layout = () => {
         <ul>
           <li>
             <Link to="/main">main</Link>
+          </li>
+          <li>
+            <Link to="/signin">Signin</Link>
           </li>
         </ul>
       </nav>
@@ -57,6 +61,7 @@ class App extends Component {
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route path="main" element={<HelloWorld/>}/>
+                <Route path="signin" element={<Signin/>}/>
               </Route>
             </Routes>
           </BrowserRouter>
