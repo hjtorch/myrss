@@ -35,13 +35,13 @@ class App extends Component {
           >
             Learn React
           </a>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/main" element={<HelloWorld/>}/>
+            </Routes>
+          </BrowserRouter>
         </header>
       </div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/main" element={<HelloWorld/>}/>
-        </Routes>
-      </BrowserRouter>
     );
   }
 }
