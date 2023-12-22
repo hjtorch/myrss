@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -35,6 +35,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <Link to="/main">Main</Link>
           <BrowserRouter>
             <Routes>
               <Route path="/main" element={<HelloWorld/>}/>
