@@ -37,7 +37,11 @@ class App extends Component {
           </a>
         </header>
       </div>
-      <Router/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/main" element={<HelloWorld/>}/>
+        </Routes>
+      </BrowserRouter>
     );
   }
 }
