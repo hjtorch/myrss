@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link, Outlet} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -17,6 +17,21 @@ function HelloWorld() {
   return <h2>hello world</h2>;
 }
 
+const Layout = () => {
+  return (
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/main">main</Link>
+          </li>
+        </ul>
+      </nav>
+
+      <Outlet />
+    </>
+  )
+};
 
 class App extends Component {
   render() {
