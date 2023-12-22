@@ -7,11 +7,16 @@ function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/main" element={<h1> hello world!<h1 />}/>
+          <Route path="/main" element={<Home/>}/>
         </Routes>
       </BrowserRouter>
   );
 }
+
+function Home() {
+  return <h2>hello world</h2>;
+}
+
 /*you 
 class Background extends Component {
   render() {
