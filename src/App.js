@@ -7,18 +7,18 @@ function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/main" element={<Home/>}/>
+          <Route path="/main" element={<HelloWorld/>}/>
         </Routes>
       </BrowserRouter>
   );
 }
 
-function Home() {
+function HelloWorld() {
   return <h2>hello world</h2>;
 }
 
-/*you 
-class Background extends Component {
+
+class Home extends Component {
   render() {
     return (
       <div className="App">
@@ -37,8 +37,9 @@ class Background extends Component {
           </a>
         </header>
       </div>
+      <App/>
     );
   }
-}*/
+}
 
 export default App;
